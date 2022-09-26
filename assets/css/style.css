@@ -1,0 +1,59 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text {
+    word-wrap: break-word;
+    width: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(94, 94, 94);
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: .9;
+}
+#display-month {
+    margin-right: 30px;
+
+}
+
+.number {
+    font-size: 60px;
+}
+
+.watch {
+    color: rgb(30, 30, 30);
+    background-color: rgb(182, 182, 182);
+    margin: 5px;
+    border-radius: 10px;
+    padding-inline: 5px;
+    padding-block: 10px;
+}
+
+
+#display-day {
+    color: white;
+    background-color: rgb(92, 92, 92);
+    margin: 5px;
+    border-radius: 10px;
+    padding-inline: 5px;
+    padding-block: 10px;
+}
+
+#display-seconds {
+    animation : every-second 1s infinite;
+}
+
+@keyframes every-second {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
